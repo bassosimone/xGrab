@@ -1,1 +1,3 @@
-python xgrab/main.py
+#!/usr/bin/python
+from xgrab.main import main
+main()

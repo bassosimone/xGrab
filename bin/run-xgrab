@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# So we can run it from the sources directory
+export PYTHONPATH=.:$PYTHONPATH
+
+python xgrab/main.py

@@ -25,7 +25,9 @@ gtk2reactor.install()
 
 from twisted.internet import reactor
 
-sys.path.insert(0, '.')
+if __name__ == "__main__":
+    sys.path.insert(0, '.')
+
 from xgrab.gui import GtkGUI
 
 # Setup a minimal logging
@@ -34,9 +36,12 @@ logging.basicConfig(filename='debug.log',
                     filemode='w',
                     format='%(asctime)s %(levelname)s %(message)s')
 
-if __name__ == '__main__':
+def main():
 
     # By default, run the GUI
 
     GtkGUI()
     reactor.run()
+
+if __name__ == '__main__':
+    main()
