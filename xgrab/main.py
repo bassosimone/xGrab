@@ -20,6 +20,24 @@
 import logging
 import sys
 
+#
+# Check for dependencies
+#
+try:
+    import twisted
+except ImportError, why:
+    sys.stderr.write("Fatal: missing dependency: Twisted >= 11.0\n")
+    sys.exit(1)
+
+try:
+    import pygtk
+except ImportError, why:
+    sys.stderr.write("Fatal: missing dependency: PyGtk >= 2.20\n")
+    sys.exit(1)
+
+#
+# Really import Twisted and PyGtk.
+#
 from twisted.internet import gtk2reactor
 gtk2reactor.install()
 
