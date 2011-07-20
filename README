@@ -1,0 +1,22 @@
+xGrab is a Direct Client-to-Client (DCC) downloader tool, with a
+nice graphical user interface.  A command-line interface is available
+as well, allowing for batch operations.
+
+Direct Client-to-Client is an IRC-related sub-protocol enabling
+peers to interconnect using an IRC server for handshaking in order
+to exchange files or perform non-relayed chats.  For more on DCC,
+see <http://en.wikipedia.org/wiki/Direct_Client-to-Client>.
+
+xGrab is written in Python using Twisted and Pygtk: Twisted is a
+popular framework for low-overhead event-based network applications,
+while PyGtk is Python's Gtk+ bindings.
+
+You can run xGrab directly from the sources using the following
+convenience command::
+
+	./bin/run-xgrab
+
+For more information on how to install xGrab from sources, please
+refer to the INSTALL file.
+
+	- The xGrab Development Team
